@@ -4,14 +4,13 @@ CRIT (**C**ircRNA **R**egulator **I**dentification **T**ool) is a pipeline based
 
 # Table of contents
 
-
 - [CRIT](#CRIT)
-- [Table of contents](#table of contents )
-- [How CRIT works (in brief)](#how CRIT works (in brief) )
-- [Before you begin](#before you begin )
-- [CRIT input files](#cRIT input files )
-- [Running CRIT](#running CRIT )
-- [CRIT output files](#cRIT output files )
+- [Table of contents](#Table-of-contents )
+- [How CRIT works (in brief)](#How-CRIT-works-(in brief) )
+- [Before you begin](#Before-you-begin )
+- [CRIT input files](#CRIT-input-files )
+- [Running CRIT](#Running-CRIT )
+- [CRIT output files](#CRIT-output-files )
 
 # How CRIT works (in brief)
 
