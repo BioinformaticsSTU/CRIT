@@ -5,12 +5,12 @@ CRIT (**C**ircRNA **R**egulator **I**dentification **T**ool) is a pipeline based
 # Table of contents
 
 - [CRIT](#CRIT)
-- [Table of contents](#Table of contents)
-- [How CRIT works (in brief)](#How CRIT works (in brief))
-- [Before you begin](#Before you begin)
-- [CRIT input files](#CRIT input files)
-- [Running CRIT](#Running CRIT)
-- [CRIT output files](#CRIT output files)
+- [Table of contents](# Table of contents)
+- [How CRIT works (in brief)](# How CRIT works (in brief))
+- [Before you begin](# Before you begin)
+- [CRIT input files](# CRIT input files)
+- [Running CRIT](# Running CRIT)
+- [CRIT output files](# CRIT output files)
 
 # How CRIT works (in brief)
 
@@ -91,8 +91,8 @@ The user must prepare following files to the upper directory named ./DATA/input 
 **3.1.** TCGA data(./DATA/input/TCGA/cancer/)
 
 -  A tab-separated .txt file containing mRNA expression data of TCGA cancer types named **data_mRNA_median_Zscores.txt** or **data_RNA_Seq_v2_mRNA_median_Zscores.txt**.
-- A tab-separated .txt file containing CNV data of TCGA cancer types named **data_CNA.txt**.
-- A tab-separated .txt file containing mutation data of TCGA cancer types named **data_mutations_extended.txt.**
+-  A tab-separated .txt file containing CNV data of TCGA cancer types named **data_CNA.txt**.
+-  A tab-separated .txt file containing mutation data of TCGA cancer types named **data_mutations_extended.txt.**
 
 **3.2.** MiOncoCirc data(./DATA/input/MiOncoCirc)
 
@@ -128,6 +128,4 @@ The files below can be downloaded from https://mioncocirc.github.io/download/.
 # CRIT output files
 
 [(Back to top)](#table-of-contents)
-
-
 
