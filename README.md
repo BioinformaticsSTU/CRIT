@@ -6,7 +6,7 @@ CRIT (**C**ircRNA **R**egulator **I**dentification **T**ool) is a pipeline based
 
 - [CRIT](#CRIT)
 - [Table of contents](#Table-of-contents )
-- [How CRIT works (in brief)](#How-CRIT-works-(in-brief) )
+- [How CRIT works (in brief)](#How-CRIT-works-(in brief) )
 - [Before you begin](#Before-you-begin )
 - [CRIT input files](#CRIT-input-files )
 - [Running CRIT](#Running-CRIT )
@@ -88,13 +88,14 @@ install.packages("xlsx","data.table","dplyr","magrittr")
 
 The user must prepare following files to the upper directory named ./DATA/input folder which ./CODE folder already containing the GET_*.R and .RData files.  These input files must contain and be formatted as follows:
 
-**3.1.** TCGA data(./DATA/input/TCGA/cancer/)
+**3.1.** TCGA data(***file storage location* : ./DATA/input/TCGA/cancer/**)
 
 -  A tab-separated .txt file containing mRNA expression data of TCGA cancer types named **data_mRNA_median_Zscores.txt** or **data_RNA_Seq_v2_mRNA_median_Zscores.txt**.
 -  A tab-separated .txt file containing CNV data of TCGA cancer types named **data_CNA.txt**.
 -  A tab-separated .txt file containing mutation data of TCGA cancer types named **data_mutations_extended.txt.**
+-  A tab-separated .txt file containing clinical data of TCGA cancer patients named **data_clinical_patient.txt**.
 
-**3.2.** MiOncoCirc data(./DATA/input/MiOncoCirc)
+**3.2.** MiOncoCirc data(***file storage location* : ./DATA/input/MiOncoCirc**)
 
 The files below can be downloaded from https://mioncocirc.github.io/download/.
 
@@ -102,19 +103,19 @@ The files below can be downloaded from https://mioncocirc.github.io/download/.
 - **v0.1.release.txt** : All circRNAs (filtered at 2 reads) in 2,000+ cancer samples in hg38
 - **meta_update.xlsx** : All 2,000+ samples annotation
 
-**3.3.** RNAct data(./DATA/input/RNAct)
+**3.3.** RNAct data(***file storage location* : ./DATA/input/RNAct**)
 
 - **catrapid_human_basic.zip** : interactome files contain human genome-wide catRAPID interaction prediction scores, which contains 20,778 canonical Human Reference Proteome proteins and 98,608 human GENCODE "basic" RNAs. This file can be download from https://rnact.crg.eu/download.
 - **gencode.v37.annotation.gtf** : human RNA annotation file which can download from https://www.gencodegenes.org/human/release_37.html.
 - **hsa_hg19_circRNA.txt** : human circRNA annotation file which can download from http://circbase.org/download/hsa_hg19_circRNA.txt.
 
-**3.4.** Harmonizome data(./DATA/input/Harmonizome)
+**3.4.** Harmonizome data(***file storage location* : ./DATA/input/Harmonizome**)
 
 - **Physical interactions** (https://maayanlab.cloud/Harmonizome/dataset/Pathway+Commons+Protein-Protein+Interactions)
 - **Cancer Gene Co-expression Modules** (https://maayanlab.cloud/Harmonizome/dataset/MSigDB+Cancer+Gene+Co-expression+Modules)
 - **Curated Transcription Factor Targets** (https://maayanlab.cloud/Harmonizome/dataset/TRANSFAC+Curated+Transcription+Factor+Targets)
 
-**3.5.** gold regulators list data(./DATA/input/)
+**3.5.** gold regulators list data(***file storage location* : ./DATA/input/**)
 
 - **golden_regulators.xlsx** : A .xlsx file contain gold regulators collected from previous researches.
 
@@ -130,3 +131,18 @@ After downloading, preparing, and making local copies of the necessary files (se
 
 After successful completion, CRIT will write multiple data tables to file to output directory.  The output files are:
 
+**- "XX_mat_altered.txt":** contains all alteration counts in each batch data of every cancer type.
+
+**- "XX_proportion_Z_Score.txt":** feature Zp of each batch data of every cancer type.
+
+**- "XX _sur_p_value_Z_Score.txt":**  feature Zs of each batch data of every cancer type.
+
+**- "GO_sim_Z_Score.txt":** feature Zg of each gene.
+
+**- "  XX_symbol_top50_meancor.txt ":** feature ρm of each cancer type.
+
+**- "C_value_matrix.txt":** feature C value of each cancer type.
+
+**- "MATRIX.txt":** contains candidate regulators' all features matix.
+
+**- "NMFgroup_XXclusterYYrun.txt":** cluster result of number XX of cluster and YY times run. 
