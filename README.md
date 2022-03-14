@@ -9,12 +9,8 @@ CRIT (**C**ircRNA **R**egulator **I**dentification **T**ool) is a pipeline based
 - [How CRIT works (in brief)](#How CRIT works (in brief))
 - [Before you begin](#Before you begin)
 - [CRIT input files](#CRIT input files)
-- [Development](#development)
-- [Contribute](#contribute)
-  - [Sponsor](#sponsor)
-  - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
-- [License](#license)
-- [Footer](#footer)
+- [Running CRIT](#Running CRIT)
+- [CRIT output files](#CRIT output files)
 
 # How CRIT works (in brief)
 
@@ -119,3 +115,19 @@ The files below can be downloaded from https://mioncocirc.github.io/download/.
 - **Curated Transcription Factor Targets** (https://maayanlab.cloud/Harmonizome/dataset/TRANSFAC+Curated+Transcription+Factor+Targets)
 
 **3.5.** gold regulators list data(./DATA/input/)
+
+- **dplyr** (https://cran.r-project.org/web/packages/dplyr/dplyr.pdf)
+- **ComplexHeatmap** (https://www.bioconductor.org/packages/release/bioc/html/ComplexHeatmap.html)
+
+
+
+# Running CRIT
+
+[(Back to top)](#table-of-contents)
+
+# CRIT output files
+
+[(Back to top)](#table-of-contents)
+
+
+
