@@ -6,7 +6,7 @@ CRIT (**C**ircRNA **R**egulator **I**dentification **T**ool) is a pipeline based
 
 - [CRIT](#CRIT)
 - [Table of contents](#Table-of-contents )
-- [How CRIT works (in brief)](#How-CRIT-works-(in-brief) )
+- [How CRIT works (in brief)](#How-CRIT-works-(in brief) )
 - [Before you begin](#Before-you-begin )
 - [CRIT input files](#CRIT-input-files )
 - [Running CRIT](#Running-CRIT )
@@ -116,16 +116,17 @@ The files below can be downloaded from https://mioncocirc.github.io/download/.
 
 **3.5.** gold regulators list data(./DATA/input/)
 
-- **dplyr** (https://cran.r-project.org/web/packages/dplyr/dplyr.pdf)
-- **ComplexHeatmap** (https://www.bioconductor.org/packages/release/bioc/html/ComplexHeatmap.html)
-
-
+- **golden_regulators.xlsx** : A .xlsx file contain gold regulators collected from previous researches.
 
 # Running CRIT
 
 [(Back to top)](#table-of-contents)
 
+After downloading, preparing, and making local copies of the necessary files (see above), the user should specify their path parameters in the "**CRIT_settings.R**" file where indicated.  This file can then be saved and sourced, and CRIT will then run in its entirety.
+
 # CRIT output files
 
 [(Back to top)](#table-of-contents)
+
+After successful completion, CRIT will write multiple data tables to file to output directory.  The output files are:
 
