@@ -30,7 +30,7 @@ CRIT adopts an NMF-based strategy consisting of a *"features collecting"* , a *"
 
 **C value**: From the RNAct database, excluding the weak relationship with interaction score<30 of the protein-RNA interaction data, then align circRNA to RNA according to their chromosomal position annotations, which were extracted respectively from Gencode or CircBase. It is considered that a protein interacts with a circRNA if the position of the circRNA is completely aligned to the corresponding RNA.*C* value was defined as the number of circRNA with which each protein binds, and is used to indicate the strength of a protein interacting with circRNA. 
 
-**1.2. cluster identify**. CRIT has been designed to identify circRNA regulators by using an NMF-based pipeline and pulling out genes that were collected in the previous research. We provide an .RData file containing a list of genes involved in 1344 RBPs. The user can of course prepare a similar .RData file containing genes relating to circRNA regulators or RBPs for input to CRIT.  OUr .RData file containing genes was prepared as follows:
+**1.2. cluster identify**. CRIT has been designed to identify circRNA regulators by using an NMF-based pipeline and pulling out genes that were collected in the previous research. We provide an .RData file containing a list of genes involved in 1344 RBPs. The user can of course prepare a similar .RData file containing genes relating to circRNA regulators or RBPs for input to CRIT.  Our .RData file containing genes was prepared as follows:
 
 - **(i)** Ensembl gene id: Ensembl gene IDs begin with ENS for Ensembl, and then a G for gene, such as ENSG00000148584.
 - **(ii)** Hgnc symbol: The HGNC approves a gene name and symbol (short-form abbreviation) for each known human gene, such as A1CF.
@@ -117,7 +117,7 @@ The files below can be downloaded from https://mioncocirc.github.io/download/.
 
 **3.5.** gold regulators list data(***file storage location* : ./DATA/input/**)
 
-- **golden_regulators.xlsx** : A .xlsx file contain gold regulators collected from previous researches.
+- **gold_regulators.xlsx** : A .xlsx file contain gold regulators collected from previous researches.
 
 # Running CRIT
 
