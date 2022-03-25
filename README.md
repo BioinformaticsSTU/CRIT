@@ -91,9 +91,9 @@ The user must prepare following files to the upper directory named ./DATA/input 
 **3.1.** TCGA data(***file storage location* : ./DATA/input/TCGA/cancer/**)
 
 -  A tab-separated .txt file containing mRNA expression data of TCGA cancer types named **data_mRNA_median_Zscores.txt** or **data_RNA_Seq_v2_mRNA_median_Zscores.txt**.
--  A tab-separated .txt file containing CNV data of TCGA cancer types named **data_CNA.txt**.
--  A tab-separated .txt file containing mutation data of TCGA cancer types named **data_mutations_extended.txt.**
--  A tab-separated .txt file containing clinical data of TCGA cancer patients named **data_clinical_patient.txt**.
+- A tab-separated .txt file containing CNV data of TCGA cancer types named **data_CNA.txt**.
+- A tab-separated .txt file containing mutation data of TCGA cancer types named **data_mutations_extended.txt.**
+- A tab-separated .txt file containing clinical data of TCGA cancer patients named **data_clinical_patient.txt**.
 
 **3.2.** MiOncoCirc data(***file storage location* : ./DATA/input/MiOncoCirc**)
 
@@ -139,10 +139,11 @@ After successful completion, CRIT will write multiple data tables to file to out
 
 **- "GO_sim_Z_Score.txt":** feature Zg of each gene.
 
-**- "  XX_symbol_top50_meancor.txt ":** feature ρm of each cancer type.
+**- " XX_symbol_top50_meancor.txt ":** feature ρm of each cancer type.
 
 **- "C_value_matrix.txt":** feature C value of each cancer type.
 
 **- "MATRIX.txt":** contains candidate regulators' all features matix.
 
 **- "NMFgroup_XXclusterYYrun.txt":** cluster result of number XX of cluster and YY times run. 
+
